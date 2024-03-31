@@ -1,27 +1,48 @@
-# Flutter/Dart specific files
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
 *.iml
-*.metadata
+*.ipr
+*.iws
 .idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
-.pub/
-.build/
 .flutter-plugins
 .flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
 
-# iOS specific files
-ios/Pods/
-ios/.symlinks/
-ios/Flutter/Flutter.framework/
-ios/Flutter/Flutter.podspec
+# Symbolication related
+app.*.symbols
 
-# Android specific files
-android/build/
-android/gradle/
-android/local.properties
-android/app/build/
+# Obfuscation related
+app.*.map.json
 
-# macOS specific files
-macos/Pods/
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
 
-# Windows specific files
-windows/Flutter/flutter_export_environment.sh
+# Exclude large files
+khao/.dart_tool/flutter_build/e93072409d7ceaf036789ef3d9bb4457/app.dill
+khao/build/app/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libVkLayer_khronos_validation.so
+khao/build/app/outputs/apk/debug/app-debug.apk
